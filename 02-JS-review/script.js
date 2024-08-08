@@ -222,7 +222,7 @@ const count = book.reviews.librarything.reviewsCount ?? "no data";
 count;
 
 //Optional Chaining
-*/
+
 function getTotalReviewCount(book) {
   const goodreads = book.reviews?.goodreads?.reviewsCount;
   const librarything = book.reviews?.librarything?.reviewsCount ?? 0;
@@ -293,3 +293,12 @@ const booksAfterUpdate = booksAfterDelete.map((book) =>
   book.id === 1 ? { ...book, pages: 1210 } : book
 );
 booksAfterUpdate;
+
+*/
+
+//Asynchronous JavaScript: Promises
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+  .then((res) => res.json())
+  .then((data) => console.log(data));
+
+console.log("olga");
