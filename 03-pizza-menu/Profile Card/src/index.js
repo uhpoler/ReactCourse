@@ -49,12 +49,8 @@ function SkillList() {
 
 function Skill(props) {
   return (
-    <div className="skill">
-      <span
-        style={{ backgroundColor: props.color, borderRadius: 10, padding: 5 }}
-      >
-        {props.skill}
-      </span>
+    <div className="skill" style={{ backgroundColor: props.color }}>
+      <span>{props.skill}</span>
     </div>
   );
 }
