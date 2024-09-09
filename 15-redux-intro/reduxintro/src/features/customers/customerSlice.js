@@ -6,7 +6,7 @@ const initialStateCustomer = {
 
 export default function customerReduser(state = initialStateCustomer, action) {
   switch (action.type) {
-    case "custumer/createCustomer":
+    case "customer/createCustomer":
       return {
         ...state,
         fullName: action.payload.fullName,
@@ -28,5 +28,5 @@ export function createCustomer(fullName, nationalID) {
 }
 
 export function updateName(fullName) {
-  return { type: "account/updateName", payload: fullName };
+  return { type: "customer/updateName", payload: fullName };
 }
